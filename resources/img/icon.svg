@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" id="app-default" data-supported-dps="50x50">
+  <!-- <path fill="none" d="M0 0h552v138H0z"/> -->
+  <path d="M3 0H0v50h50a0 20 0 000-50z" fill="#ffffff"/>
+</svg>
