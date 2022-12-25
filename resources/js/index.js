@@ -150,7 +150,7 @@ let resetAppsContainer = () => {
  */
 let search = () => {
   let key = getKey()
-  console.log(key)
+  
   // Removed all apps
   resetAppsContainer()
 
@@ -158,6 +158,12 @@ let search = () => {
 }
 
 
+/**
+ * 
+ * 
+ * 
+ * @returns 
+ */
 let getKey = () => {
   return inputSearch.value
 }
