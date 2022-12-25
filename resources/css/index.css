@@ -82,19 +82,19 @@ body {
 }
 
 .icon-battery {
-  background-image: url(/resources/img/half-battery.png);
+  background-image: url(../img/half-battery.png);
 }
 
 .icon-network {
-  background-image: url(/resources/img/signal.png);
+  background-image: url(../img/signal.png);
 }
 
 .icon-clock {
-  background-image: url(/resources/img/alarm-clock.png);
+  background-image: url(../img/alarm-clock.png);
 }
 
 .icon-sound {
-  background-image: url(/resources/img/mute.png);
+  background-image: url(../img/mute.png);
 }
 
 
