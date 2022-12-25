@@ -27,7 +27,7 @@ let apps = [
   },
   {
     'name': 'Clock',
-    'icon': './resources/img/icon.svg',
+    'icon': './resources/img/app/hourglass.png',
     'link': '#'
   },
 ],
@@ -61,10 +61,14 @@ let init = () => {
 }
 
 
+/**
+ * 
+ * Display time in HH:MM format
+ * 
+ */
 let time = () => {
   let time = new Date()
-
-  timeNode.innerHTML = time.toLocaleTimeString()
+  timeNode.innerHTML = time.getHours() + ':' + time.getMinutes()
 }
 
 
@@ -149,11 +153,10 @@ let resetAppsContainer = () => {
  * 
  */
 let search = () => {
-  let key = getKey()
+  let key = getKey().toLowerCase()
   
   // Removed all apps
   resetAppsContainer()
-
   displayApps(apps.filter(({ name }) => name.toLowerCase().includes(key)))
 }
 
