@@ -154,7 +154,7 @@ let search = () => {
   // Removed all apps
   resetAppsContainer()
 
-  displayApps(apps.filter(({ name }) => name.includes(key)))
+  displayApps(apps.filter(({ name }) => name.toLowerCase().includes(key)))
 }
 
 
