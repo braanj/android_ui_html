@@ -7,22 +7,22 @@
 let apps = [
   {
     'name': 'Play Store',
-    'icon': './resources/img/icon.svg',
+    'icon': './resources/img/app/google-play.png',
     'link': '#'
   },
   {
     'name': 'Camera',
-    'icon': './resources/img/icon.svg',
+    'icon': './resources/img/app/photo.png',
     'link': '#'
   },
   {
     'name': 'Chrome',
-    'icon': './resources/img/icon.svg',
+    'icon': './resources/img/app/chrome.png',
     'link': '#'
   },
   {
     'name': 'Calendar',
-    'icon': './resources/img/icon.svg',
+    'icon': './resources/img/app/calendar.png',
     'link': '#'
   },
   {
@@ -32,7 +32,8 @@ let apps = [
   },
 ],
   appsContainer,
-  inputSearch
+  inputSearch,
+  timeNode
 
 
 /**
@@ -45,13 +46,25 @@ let init = () => {
   console.log('Android is ready!')
 
   appsContainer = document.querySelector('.apps-container')
-  inputSearch = document.querySelector('input[type=\'search\'')
+  inputSearch   = document.querySelector('input[type=\'search\'')
+  timeNode      = document.querySelector('#time')
   
   inputSearch.addEventListener('input', () => {
     search()
   })
 
   displayApps(apps)
+
+  setInterval(() => {
+    time()
+  }, 1000)
+}
+
+
+let time = () => {
+  let time = new Date()
+
+  timeNode.innerHTML = time.toLocaleTimeString()
 }
 
 

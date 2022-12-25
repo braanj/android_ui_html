@@ -16,8 +16,9 @@
 :root {
 
   /* Colors */
-  --app-bg-color: rgb(108, 166, 224);
+  --app-bg-color:   rgb(108, 166, 224);
   --app-text-color: #000000;
+  --white-color:    #ffffff;
 
   /* Units */
   --app-ui-space: 10px 20px;
@@ -33,6 +34,13 @@ body {
   justify-content: space-around;
 }
 
+.icon {
+  display: inline-block;
+  padding: 8px;
+  background-size: contain;
+  filter: invert(1);
+}
+
 
 /* 
   App body style
@@ -43,6 +51,7 @@ body {
   background-color: var(--app-bg-color);
   padding: var(--app-ui-space);
   height: 100vh;
+  position: relative;
 }
 
 
@@ -54,6 +63,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  color: var(--white-color);
 }
 
 .search-form {
@@ -69,6 +79,22 @@ body {
   border-radius: 20px;
   padding: 10px 20px;
   border: initial;
+}
+
+.icon-battery {
+  background-image: url(/resources/img/half-battery.png);
+}
+
+.icon-network {
+  background-image: url(/resources/img/signal.png);
+}
+
+.icon-clock {
+  background-image: url(/resources/img/alarm-clock.png);
+}
+
+.icon-sound {
+  background-image: url(/resources/img/mute.png);
 }
 
 
@@ -104,14 +130,43 @@ main {
   margin-bottom: var(--main-space);
   color: var(--app-text-color);
   text-decoration: none;
+  text-align: center;
 }
 
 .app-icon {
+  width: 100%;
+  max-width: 60px;
+  height: auto;
   border-radius: 50%;
+  padding: 2px;
   margin-bottom: 5px;
 }
 
 .app-name {
   text-align: center;
   font-size: var(--app-name-font-size);
+  color: var(--white-color);
+}
+
+
+/*
+
+  App Footer style
+  
+*/
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  color: var(--white-color);
+  width: 100%;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  opacity: .6;
 }
