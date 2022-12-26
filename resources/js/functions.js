@@ -17,9 +17,12 @@ let skeleton = () => {
  */
 let time = () => {
   let time = new Date()
-  timeNode.innerHTML = time.getHours() + ':' + time.getMinutes()
+  timeNode.innerHTML = formatTime(time.getHours()) + ':' + formatTime(time.getMinutes())
 }
 
+let formatTime = (time) => {
+  return time > 10 ? time : '0' + time
+}
 
 /**
  * 
