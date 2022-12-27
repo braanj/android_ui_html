@@ -2,7 +2,7 @@
   {
     "name": "Play Store",
     "icon": "./resources/img/app/google-play.png",
-    "link": "/templates/play-store.html"
+    "link": "./templates/play-store.html"
   },
   {
     "name": "Camera",
