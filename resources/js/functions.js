@@ -74,7 +74,7 @@ let createNode = (div, app) => {
 
 let displayApps = (searchKey = '') => {
 
-  fetch('/data/data.json')
+  fetch('/resources/data/data.json')
     .then((response) => response.json())
     .then((apps) => {
 
