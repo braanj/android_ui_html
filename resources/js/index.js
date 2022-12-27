@@ -27,7 +27,7 @@ let init = () => {
     search()
   })
 
-  skeleton()
+  skeleton(appsContainer, appTempate)
 
   displayApps()
 

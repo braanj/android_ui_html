@@ -3,9 +3,9 @@
  * Displays a skeleton of the page while waiting for data loading
  * 
  */
-let skeleton = () => {
-  for (let i = 0; i < 12; i++) {
-    appsContainer.append(appTempate.content.cloneNode(true))
+let skeleton = (container, template, items = 12) => {
+  for (let i = 0; i < items; i++) {
+    container.append(template.content.cloneNode(true))
   }
 }
 
@@ -78,7 +78,7 @@ let displayApps = (searchKey = '') => {
     .then((response) => response.json())
     .then((apps) => {
 
-      resetAppsContainer()
+      resetContainer(appsContainer)
 
       apps.forEach((app, index) => {
 
@@ -104,8 +104,8 @@ let displayApps = (searchKey = '') => {
  * 
  */
 
-let resetAppsContainer = () => {
-  appsContainer.innerHTML = ''
+let resetContainer = (container) => {
+  container.innerHTML = ''
 }
 
 
@@ -119,7 +119,7 @@ let search = () => {
 
   if (searchKey) {
 
-    resetAppsContainer()
+    resetContainer(appsContainer)
     displayApps(searchKey)
 
     return

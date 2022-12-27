@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Up to 20x value on special pack",
+    "description": "Best end of year deals",
+    "link": "#",
+    "style": {
+      "color": "#ffffff",
+      "backgroundColor": "rgba(80,4,4,1)"
+    }
+  },
+  {
+    "title": "Offer on special item",
+    "description": "Best end of year deals",
+    "link": "#",
+    "style": {
+      "color": "#ffffff",
+      "backgroundColor": "rgba(95,58,24,1)"
+    }
+  },
+  {
+    "title": "Up to 85% off packs and boosters",
+    "description": "Best end of year deals",
+    "link": "#",
+    "style": {
+      "color": "#000000",
+      "backgroundColor": "rgba(137,145,190,1)"
+    }
+  },
+  {
+    "title": "Up to 50% off special bundle",
+    "description": "Extra points on purchases",
+    "link": "#",
+    "style": {
+      "color": "#000000",
+      "backgroundColor": "rgba(190,167,220,1)"
+    }
+  }
+]

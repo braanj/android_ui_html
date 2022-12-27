@@ -8,6 +8,7 @@
   <title>Android</title>
 
   <link rel="stylesheet" href="../resources/css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -23,11 +24,21 @@
       </div>
     </nav>
 
-    <main class="apps-container">
-      <header class="app-page-header">
-        <img class="app-icon" src="../resources/img/app/google-play.png" alt="">
-        <h3>Play Store</h3>
-      </header>
+    <header class="app-page-header">
+      <img class="app-icon" src="../resources/img/app/google-play.png" alt="">
+      <h3 class="app-name">Play Store</h3>
+    </header>
+
+    <main class="content">
+      <!-- Banners section -->
+      <section class="highlights carousel" id="highlights">
+        <template id="store-highlights">
+          <a class="skeleton-banner banner carousel-cell">
+            <h3 class="skeleton skeleton-text banner-title"></h3>
+            <p class="skeleton skeleton-text banner-description"></p>
+          </a>
+        </template>
+      </section>
     </main>
 
     <footer>
@@ -39,6 +50,11 @@
 
   <script src="../resources/js/functions.js"></script>
   <script src="../resources/js/time.js"></script>
+  <script src="../resources/js/banners.js"></script>
+
+  <!-- Flickity liberary -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="../resources/js/features/carousel.js" defer></script>
 </body>
 
 </html>
