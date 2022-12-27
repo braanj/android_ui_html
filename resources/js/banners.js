@@ -23,7 +23,7 @@ let displayBanners = (container, bannerTemplate) => {
   // Remove slider functionnality
   container.classList.remove('carousel')
   
-  fetch('./resources/data/banners.json')
+  fetch('../resources/data/banners.json')
   .then((response) => {
     return response.json()
   })
