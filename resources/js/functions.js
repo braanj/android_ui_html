@@ -21,7 +21,7 @@ let time = () => {
 }
 
 let formatTime = (time) => {
-  return time > 10 ? time : '0' + time
+  return time > 9 ? time : '0' + time
 }
 
 /**
@@ -74,7 +74,7 @@ let createNode = (div, app) => {
 
 let displayApps = (searchKey = '') => {
 
-  fetch('./data/data.json')
+  fetch('/resources/data/data.json')
     .then((response) => response.json())
     .then((apps) => {
 
