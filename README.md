@@ -2,6 +2,7 @@
 
 <!-- PROJECT SHIELDS -->
 [![release-date][release-date]][release-date]
+<br />
 [![forks-url][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -47,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p align="center">
+<p align="left">
     This project was made to practice web development using Html5, CSS3, and JavaScript (ES6). It assimulats the android OS. There's search and skeleton (skeleton of page's parts while data's loading) features.
     <br />
     See the project in action : <a href="https://braanj.github.io/android_ui_html/">View Demo</a>
@@ -84,8 +85,10 @@ Basic knowledge of : Html, css, and Javascript.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add apps pages with their functionnality
-- [x] Add setting features
+- [x] Add search funtionnality
+- [ ] Fetch app data using ```JSON```
+- [ ] Add apps pages with their functionnality
+- [ ] Add setting features
 - [ ] Add go back button
 - [ ] Add apps as json data
 
