@@ -86,8 +86,9 @@ Basic knowledge of : Html, css, and Javascript.
 ## Roadmap
 
 - [x] Add search funtionnality
-- [ ] Fetch app data using ```JSON```
+- [x] Fetch app data using ```JSON```
 - [ ] Add apps pages with their functionnality
+  - [ ]  Play store page
 - [ ] Add setting features
 - [ ] Add go back button
 - [ ] Add apps as json data
