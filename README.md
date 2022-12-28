@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-[release-date]
+[![release-date][release-date]]
 [forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
