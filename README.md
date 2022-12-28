@@ -2,7 +2,7 @@
 
 <!-- PROJECT SHIELDS -->
 [![release-date][release-date]][release-date]
-[![forks-url][forks-url]][forks-url]
+[![forks-url][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
